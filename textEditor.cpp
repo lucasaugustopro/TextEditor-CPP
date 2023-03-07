@@ -33,10 +33,10 @@ int main() {
       ifstream file(filename);
 
       if (file.is_open()) {
-        
+
         getline(file, file_contents, '\0');
         file.close();
-        cout << "File " << filename << " opened." << endl;
+        cout << "Arquivo " << filename << " aberto." << endl;
       } else {
         cout << "Nao e possivel abrir o arquivo " << filename << "." << endl;
       }
